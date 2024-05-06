@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameController : MonoBehaviour
     private int currentPlayers = 0;
     public UnityEvent onPlayerFinished;
     public UnityEvent onPlayerLeft;
+    public int CurrentLevel;
+
 
     // finish.onPlayerFinished.AddListener(HandlePlayerFinished);
 
@@ -21,10 +24,12 @@ public class GameController : MonoBehaviour
         if (currentPlayers == amountOfPlayers)
         {
             Debug.Log("All players finished!");
+            SceneManager.LoadScene("Level" + (CurrentLevel + 1));
         }
     }
 
-    public void HandlePlayerLeft(){
+    public void HandlePlayerLeft()
+    {
         Debug.Log("Player left again!");
         currentPlayers--;
     }
@@ -38,6 +43,10 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // Check if the player wants to restart the level
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Level" + CurrentLevel);
+        }
     }
 }

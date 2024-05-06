@@ -955,6 +955,7 @@ MonoBehaviour:
   onPlayerLeft:
     m_PersistentCalls:
       m_Calls: []
+  CurrentLevel: 2
 --- !u!4 &883767135
 Transform:
   m_ObjectHideFlags: 0
@@ -1171,11 +1172,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4071393993440718954, guid: 9e537d3b29edfa847be76f7b854cc710, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4071393993440718954, guid: 9e537d3b29edfa847be76f7b854cc710, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4071393993440718954, guid: 9e537d3b29edfa847be76f7b854cc710, type: 3}
       propertyPath: m_LocalPosition.z
