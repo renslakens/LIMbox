@@ -1071,7 +1071,7 @@ MonoBehaviour:
   onPlayerLeft:
     m_PersistentCalls:
       m_Calls: []
-  CurrentLevel: 0
+  CurrentLevel: 3
 --- !u!4 &883767135
 Transform:
   m_ObjectHideFlags: 0

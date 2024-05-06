@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d40f2e950e836d4298b2c3546bb9d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfPlayers: 2
+  amountOfPlayers: 3
   onPlayerFinished:
     m_PersistentCalls:
       m_Calls: []
